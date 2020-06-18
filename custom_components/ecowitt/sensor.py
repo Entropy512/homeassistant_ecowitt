@@ -62,6 +62,11 @@ class EcowittSensor(EcowittEntity):
         return self._uom
 
     @property
+    def force_update(self):
+        """Force update."""
+        return True
+
+    @property
     def icon(self):
         """Return the icon to use in the fronend."""
         return self._icon
